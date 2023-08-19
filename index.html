@@ -43,7 +43,7 @@
     </header>
     <main class="bg-[#F8F8F8]">
         <section class="container mx-auto py-32">
-            <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col lg:flex-row gap-6">
                 <!-- card -->
                <div class="">
                 <div>
@@ -52,7 +52,7 @@
                          <!-- card-1 -->
                          <div class="card bg-base-100 shadow-xl">
                             <figure class="px-5 pt-5 ">
-                              <img src="./images/prod1.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-9 px-32" />
+                              <img src="./images/prod1.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-8 px-20" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title text-xl font-semibold mb-2">K. Accessories</h2>
@@ -69,7 +69,7 @@
                           <!-- card-2 -->
                         <div class="card bg-base-100 shadow-xl">
                             <figure class="px-5 pt-5 ">
-                              <img src="./images/prod2.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-12 px-32" />
+                              <img src="./images/prod2.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-7 px-16" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title text-xl font-semibold mb-2">K. Accessories</h2>
@@ -86,7 +86,7 @@
                           <!-- card-3 -->
                         <div class="card bg-base-100 shadow-xl">
                             <figure class="px-5 pt-5 ">
-                              <img src="./images/prod3.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-8 px-24" />
+                              <img src="./images/prod3.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-8 px-16" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title text-xl font-semibold mb-2">Home Cooker</h2>
@@ -102,13 +102,14 @@
                           </div>
                     </div>
                 </div>
+                <!-- sports wear -->
                 <div>
                     <h4 class="text-4xl font-semibold mb-8 mt-14">Sportswear</h4>
                     <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                          <!-- card-4 -->
                          <div class="card  bg-base-100 shadow-xl">
                             <figure class="px-5 pt-5 ">
-                              <img src="./images/prod4.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-16 px-32" />
+                              <img src="./images/prod4.png" alt="K. Accessories" class="rounded-xl bg-gray-200 px-16 py-9" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title text-xl font-semibold mb-2">Sports Back Cap</h2>
@@ -125,7 +126,7 @@
                           <!-- card-5 -->
                         <div class="card  bg-base-100 shadow-xl">
                             <figure class="px-5 pt-5 ">
-                              <img src="./images/prod5.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-7 px-28" />
+                              <img src="./images/prod5.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-7 px-20" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title text-xl font-semibold mb-2">Full Jersey Set</h2>
@@ -142,7 +143,7 @@
                           <!-- card-6 -->
                         <div class="card  bg-base-100 shadow-xl">
                             <figure class="px-5 pt-5 ">
-                              <img src="./images/prod6.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-7 px-24" />
+                              <img src="./images/prod6.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-9 px-20" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title text-xl font-semibold mb-2">Sports cates</h2>
@@ -161,8 +162,29 @@
                 </div>
                </div>
                 <!-- cart -->
-                <div class="flex-1">
-
+                <div>
+                    <!-- cupon -->
+                    <div class="bg-white w-80 shadow-xl p-6 mt-[72px] rounded-lg">
+                        <h3 class="text-2xl font-medium mb-4">Have coupon?</h3>
+                        <div class="relative">
+                            <input type="text" placeholder="Coupon code" class="input input-bordered w-full pr-16 text-xl" /> 
+                            <button class="btn bg-[#E527B2] absolute text-xl text-white font-semibold top-0 right-0 rounded-l-none">Apply</button>
+                          </div>
+                    </div>
+                    <!-- purchase -->
+                    <div class="bg-white w-80 shadow-xl p-6 rounded-lg mt-6">
+                        <div>
+                            <!-- add card -->
+                        </div>
+                        <hr>
+                        <!-- calculation -->
+                        <div>
+                            <p>Total price: <span></span> Tk </p>
+                            <p>Discount:</p>
+                            <p>Total:</p>
+                        </div>
+                        <hr>
+                    </div>
                 </div>
             </div>
         </section>
