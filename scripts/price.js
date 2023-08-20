@@ -14,8 +14,17 @@ function cardClick(target){
     total = parseFloat(total) + parseFloat(price);
     document.getElementById('total').innerText = total.toFixed(2);
 
-    if(total =>200){
-        document.getElementById('discount-btn') = 
+    const purchaseButton = document.getElementById('purchase-btn');
+    const discountButton = document.getElementById('discount-btn');
+    if(total > 0){
+        purchaseButton.removeAttribute('disabled');
+        if(total >= 200){
+            discountButton.removeAttribute('disabled')
+        }
+        
+    }
+    else{
+        purchaseButton.setAttribute('disabled')
     }
 
      console.log(total);
