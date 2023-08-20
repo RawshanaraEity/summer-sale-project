@@ -31,7 +31,7 @@
                     <h1 class="text-5xl font-bold mb-16">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span></h1>
                    <div class="">
                     <p class="py-6 inline-block text-2xl font-medium mr-4">Use Promo Code</p>
-                    <button class="btn bg-[#E527B2] text-white text-2xl font-semibold">SELL200</button>
+                    <button id="coupon-code" class="btn bg-[#E527B2] text-white text-2xl font-semibold">SELL200</button>
                    </div>
                   </div>
                 </div>
@@ -164,8 +164,8 @@
                     <div class="bg-white  shadow-xl p-6 mt-[72px] rounded-lg">
                         <h3 class="text-2xl font-medium mb-4">Have coupon?</h3>
                         <div class="relative">
-                            <input type="text" placeholder="Coupon code" class="input input-bordered w-full pr-16 text-xl" /> 
-                            <button id="discount-btn" class="btn bg-[#E527B2] absolute text-xl text-white font-semibold top-0 right-0 rounded-l-none" disabled>Apply</button>
+                            <input id="input-field" type="text" placeholder="Coupon code" class="input input-bordered w-full pr-16 text-xl" /> 
+                            <button onclick="discountCalculation(this)" id="discount-btn" class="btn bg-[#E527B2] absolute text-xl text-white font-semibold top-0 right-0 rounded-l-none" disabled>Apply</button>
                           </div>
                     </div>
                     <!-- purchase -->
@@ -176,13 +176,29 @@
                         <hr>
                         <!-- calculation -->
                         <div class="mt-6">
-                            <p class="text-2xl text-[#111] font-medium ">Total price: <span id="total" class="text-gray-400"></span> <span class="text-gray-400">Tk</span> </p>
-                            <p class="text-2xl text-[#111] font-medium my-6">Discount: <span id="" class="text-gray-400"></span> <span class="text-gray-400">Tk</span> </p>
-                            <p class="text-2xl text-[#111] font-medium mb-6">Total: <span id="" class="text-gray-400"></span> <span class="text-gray-400">Tk</span> </p>
+                            <p class="text-2xl text-[#111] font-medium ">Total price: <span id="totalPrice" class="text-gray-400">00</span> <span class="text-gray-400">Tk</span> </p>
+                            <p class="text-2xl text-[#111] font-medium my-6">Discount: <span id="discount" class="text-gray-400">00</span> <span class="text-gray-400">Tk</span> </p>
+                            <p class="text-2xl text-[#111] font-medium mb-6">Total: <span id="total" class="text-gray-400">00</span> <span class="text-gray-400">Tk</span> </p>
                         </div>
                         <hr>
                     </div>
-                        <button id="purchase-btn" class="btn bg-[#E527B2] relative -top-7 left-7 text-white text-xl font-semibold  px-12" disabled>Make Purchase</button>
+
+                    <!-- modal -->
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button id="purchase-btn" class="btn bg-[#E527B2] relative -top-7 left-7 text-white text-xl font-semibold  px-12" disabled onclick="my_modal_5.showModal('purchase-btn')">Make Purchase</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                    <form method="dialog" class="modal-box text-center">
+                        <div class="flex justify-center"><img src="./images/congo.png" alt=""></div>
+                    <h3 class="font-bold text-lg">Congratulations</h3>
+                    <p class="py-4">Your Purchase the product</p>
+                    <div class="modal-action flex justify-center">
+      <!-- if there is a button in form, it will close the modal -->
+                    <button onclick="goHomeBtn(this)" id="home" class="btn bg-[#E527B2] text-white">Go Home</button>
+                    </div>
+                 </form>
+                    </dialog>
+
+
                 </div>
             </div>
         </section>
