@@ -1,4 +1,4 @@
-// click card fot getting price
+
 let totalPrice = 0;
 
 function cardClick(target){

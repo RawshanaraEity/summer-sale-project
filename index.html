@@ -42,10 +42,10 @@
         <section class="container mx-auto py-32">
             <div class="flex flex-col lg:flex-row gap-6">
                 <!-- card -->
-               <div class="">
+               <div>
                 <div>
                     <h4 class="text-4xl text-center lg:text-start font-semibold mb-8">Kitchenware</h4>
-                    <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-5 lg:mx-0">
                          <!-- card-1 -->
                          <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl">
                             <figure class="px-5 pt-5 ">
@@ -102,11 +102,11 @@
                 <!-- sports wear -->
                 <div>
                     <h4 class="text-4xl text-center lg:text-start font-semibold mb-8 mt-14">Sportswear</h4>
-                    <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-5 lg:mx-0">
                          <!-- card-4 -->
                          <div onclick="cardClick(this)" class="card  bg-base-100 shadow-xl">
                             <figure class="px-5 pt-5 ">
-                              <img src="./images/prod4.png" alt="K. Accessories" class="rounded-xl bg-gray-200 px-16 py-9" />
+                              <img src="./images/prod4.png" alt="K. Accessories" class="rounded-xl bg-gray-200 px-14 lg:px-16 py-9" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title text-xl font-semibold mb-2">Sports Back Cap</h2>
@@ -140,7 +140,7 @@
                           <!-- card-6 -->
                         <div onclick="cardClick(this)" class="card  bg-base-100 shadow-xl">
                             <figure class="px-5 pt-5 ">
-                              <img src="./images/prod6.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-9 px-20" />
+                              <img src="./images/prod6.png" alt="K. Accessories" class="rounded-xl bg-gray-200 py-8 px-16 lg:py-9 lg:px-20" />
                             </figure>
                             <div class="card-body items-center text-center">
                               <h2 class="card-title text-xl font-semibold mb-2">Sports cates</h2>
@@ -155,7 +155,62 @@
                             </div>
                           </div>
                     </div>
-
+                </div>
+                <div>
+                    <h4 class="text-4xl text-center lg:text-start font-semibold mt-14 mb-8">Furniture</h4>
+                    <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-5 lg:mx-0">
+                         <!-- card-7 -->
+                         <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl">
+                            <figure class="px-5 pt-5 ">
+                              <img src="./images/prod7.png" alt="Single Relax Chair" class="rounded-xl bg-gray-200 py-7 px-16 lg:py-9 lg:px-20" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 id="card-1" class="card-title text-xl font-semibold mb-2">Single Relax Chair</h2>
+                              <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                              <p class="text-xl font-normal text-gray-500 mt-2"><span>185.00</span> TK</p>
+                            </div>
+                        </div>
+                          <!-- card-8 -->
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl">
+                            <figure class="px-5 pt-5 ">
+                              <img src="./images/prod8.png" alt="Children play" class="rounded-xl bg-gray-200 py-8 px-20 lg:py-7" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title text-xl font-semibold mb-2">Children play</h2>
+                              <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                              <p class="text-xl font-normal text-gray-500 mt-2"><span>299.00</span> TK</p>
+                            </div>
+                          </div>
+                          <!-- card-9 -->
+                        <div onclick="cardClick(this)" class="card bg-base-100 shadow-xl">
+                            <figure class="px-5 pt-5 ">
+                              <img src="./images/prod9.png" alt="Flexible Sofa" class="rounded-xl bg-gray-200 py-9 px-14 lg:py-11 lg:px-20" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title text-xl font-semibold mb-2">Flexible Sofa</h2>
+                              <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                              <p class="text-xl font-normal text-gray-500 mt-2"><span>339.00</span> TK</p>
+                            </div>
+                          </div>
+                    </div>
                 </div>
                </div>
                 <!-- cart -->
@@ -171,7 +226,7 @@
                     <!-- purchase -->
                     <div class="bg-white w-80 shadow-xl px-6 pt-6 pb-20 rounded-lg mt-6">
                         <div id="selected-items" class="text-xl text-[#111] font-medium ">
-                            <!-- add card -->
+                            <!-- add to cart -->
                         </div>
                         <hr>
                         <!-- calculation -->
@@ -184,7 +239,6 @@
                     </div>
 
                     <!-- modal -->
-                    <!-- Open the modal using ID.showModal() method -->
                     <button id="purchase-btn" class="btn bg-[#E527B2] relative -top-7 left-7 text-white text-xl font-semibold  px-12" disabled onclick="my_modal_5.showModal('purchase-btn')">Make Purchase</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box text-center">
@@ -192,7 +246,8 @@
                     <h3 class="font-bold text-lg">Congratulations</h3>
                     <p class="py-4">Your Purchase the product</p>
                     <div class="modal-action flex justify-center">
-      <!-- if there is a button in form, it will close the modal -->
+
+    
                     <button onclick="goHomeBtn(this)" id="home" class="btn bg-[#E527B2] text-white">Go Home</button>
                     </div>
                  </form>
